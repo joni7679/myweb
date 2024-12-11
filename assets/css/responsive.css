@@ -1,0 +1,93 @@
+@media(max-width:1120px) {
+    header nav .nav-centre {
+        display: none !important;
+    }
+
+}
+
+@media (max-width:970px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .adver {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-left-part {
+        width: 80%;
+    }
+}
+
+@media(max-width:900px) {
+    .adventure-section {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:850px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:800px) {
+    .contact-info {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:650px) {
+    .images {
+        flex-direction: column;
+    }
+
+    .img-container:nth-child(1) {
+        width: 100%;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:600px) {
+    .features .header h1 {
+        font-size: 5vw;
+    }
+
+}
+
+@media (max-width:550px) {
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .contact-form div {
+        display: flex;
+        flex-direction: column;
+        width: 200%;
+        gap: 20px;
+    }
+
+    .hero-right-part,
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:450px) {
+    .contact-container {
+        width: 100%;
+    }
+
+    .features .header h1 {
+        font-size: 1rem;
+    }
+}
