@@ -9,6 +9,10 @@
     --blur-color: rgba(0, 0, 0, 0.1);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: pro-regular;
     src: url('../fonts/pro.regular.ttf');
@@ -49,6 +53,19 @@ main {
     align-items: center;
     gap: 0.5rem;
     margin-top: 1rem;
+}
+
+.cta-btn2 {
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+    cursor: pointer;
+
+}
+.cta-btn2:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s;
 }
 
 /* ===hearder part=== */
@@ -97,6 +114,10 @@ header nav .nav-centre {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* position: fixed;
+    top: 20px;
+    left: 244px;
+    z-index: 999; */
 }
 
 header nav .nav-centre a {
@@ -191,11 +212,13 @@ header nav .nav-centre a {
     padding: 2rem 1rem;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+
 }
 
 .stat-card h2 {
     font-size: 2rem;
-    color: #00256d;
+    color: #1554d2;
     font-weight: bold;
 }
 
@@ -211,10 +234,11 @@ header nav .nav-centre a {
     color: #444;
 }
 
-/* Specific Card Colors */
-.blue-card {
-    background-color: #1764ff;
-    color: white !important;
+.stat-card:hover {
+    background-color: #00256d;
+    color: white;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .light-card {
@@ -457,7 +481,7 @@ header nav .nav-centre a {
 }
 
 .adventure-section .content .cta-button {
-    background-color: #5390d9;
+    background-color: #050506;
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
@@ -468,6 +492,13 @@ header nav .nav-centre a {
     align-items: center;
     gap: 0.5rem;
     margin-top: 1rem;
+}
+
+.adventure-section .content .cta-button:hover {
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+    transition: all 0.5s;
 }
 
 .adventure-section .content .cta-button .arrow {
@@ -648,6 +679,12 @@ header nav .nav-centre a {
     overflow: hidden;
 }
 
+.faq-item:hover {
+    background-color: #0066ff;
+    color: #fff;
+    transition: all 0.5s;
+}
+
 .faq-item button {
     display: flex;
     justify-content: space-between;
@@ -723,13 +760,15 @@ header nav .nav-centre a {
 }
 
 .contact-info h2 {
+    width: 59%;
     font-size: 2rem;
     margin-bottom: 10px;
     color: #333;
+    border-bottom: 3px solid #f9ff33;
 }
 
 .contact-info h2 span {
-    color: #4aa3ff;
+    color: #e1e72a;
 }
 
 .contact-info p {
